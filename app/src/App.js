@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import * as Tone from "tone";
+import Prototype from "./components/Prototype";
+import "./App.css";
 
 function App() {
+  const [authorized, setAuthorized] = useState(false);
+
+  const initialize = () => {
+    Tone.start().then(() => setAuthorized(true));
+  };
+
+  if (!authorized) {
+    return <button onClick={initialize}>click to permit AudioContext</button>;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Prototype />
     </div>
   );
 }
