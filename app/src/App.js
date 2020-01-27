@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as Tone from "tone";
-import Prototype from "./components/Prototype";
+import Muse from "./components/Muse";
 import "./App.css";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Prototype />
+      <Muse />
     </div>
   );
 }

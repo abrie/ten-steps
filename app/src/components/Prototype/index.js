@@ -1,5 +1,6 @@
 import React from "react";
 import * as Tone from "tone";
+import { ShufflePopper } from "../Shuffle";
 import Transport from "../Transport";
 
 export default function() {
@@ -32,35 +33,6 @@ export default function() {
     const idx = Math.floor(Math.random() * arr.length);
     return arr[idx];
   };
-
-  const shuffle = array => {
-    var currentIndex = array.length;
-    var temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-  };
-
-  function* ShufflePopper(arr) {
-    while (true) {
-      var stack = shuffle([...arr]);
-      while (stack.length > 0) {
-        const value = stack.pop();
-        yield value;
-      }
-    }
-  }
 
   const major = [0, 4, 7, 9];
   const makeMajor = root =>
