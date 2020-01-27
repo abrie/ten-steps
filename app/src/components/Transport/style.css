@@ -1,0 +1,7 @@
+.positionIndicator {
+  font-family: monospace;
+  width: 10rem;
+  text-align: center;
+  border: 1px solid black;
+  background: lightgray;
+}
