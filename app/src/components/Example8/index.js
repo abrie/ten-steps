@@ -55,18 +55,18 @@ export default function() {
     const notes = [...buildTriad("C4"), ...buildTriad("F4")];
     const notesLFSR = makeLFSR("1001");
 
-    const select = (lfsr, array) => {
+    const select = (lfsr, array, skip) => {
       lfsr.shift();
-      const index = lfsr.register % array.length;
+      const index = lfsr.register % (array.length + (skip ? skip : 0));
       return array[index];
     };
 
     const synthLoop = new Tone.Loop(time => {
-      select(synthsLFSR, synths).triggerAttackRelease(
-        select(notesLFSR, notes),
-        "4n",
-        time
-      );
+      const synth = select(synthsLFSR, synths, 1);
+
+      if (synth) {
+        synth.triggerAttackRelease(select(notesLFSR, notes), "4n", time);
+      }
     }, "4n");
 
     synthLoop.start("0m").stop(length);
@@ -81,7 +81,7 @@ export default function() {
 
   return (
     <div>
-      <p>Eight Notes, Three Synths, Basic Theory, and LFSR.</p>
+      <p>Eight Notes, Three Synths, Basic Theory, Rests, and an LFSR.</p>
       <Transport length={length} />
     </div>
   );

@@ -9,6 +9,9 @@ import Example4 from "./components/Example4";
 import Example5 from "./components/Example5";
 import Example6 from "./components/Example6";
 import Example7 from "./components/Example7";
+import Example8 from "./components/Example8";
+import Example9 from "./components/Example9";
+import Example10 from "./components/Example10";
 import Prototype from "./components/Prototype";
 import * as ROUTES from "./constants/routes";
 import "./App.css";
@@ -49,6 +52,15 @@ function App(props) {
           <NavLink to={ROUTES.EXAMPLE_7} activeClassName="active">
             <h1>7</h1>
           </NavLink>
+          <NavLink to={ROUTES.EXAMPLE_8} activeClassName="active">
+            <h1>8</h1>
+          </NavLink>
+          <NavLink to={ROUTES.EXAMPLE_9} activeClassName="active">
+            <h1>9</h1>
+          </NavLink>
+          <NavLink to={ROUTES.EXAMPLE_10} activeClassName="active">
+            <h1>10</h1>
+          </NavLink>
         </div>
         <Switch>
           <Route path="/muse" component={Muse} />
@@ -60,6 +72,9 @@ function App(props) {
           <Route path={ROUTES.EXAMPLE_5} component={Example5} />
           <Route path={ROUTES.EXAMPLE_6} component={Example6} />
           <Route path={ROUTES.EXAMPLE_7} component={Example7} />
+          <Route path={ROUTES.EXAMPLE_8} component={Example8} />
+          <Route path={ROUTES.EXAMPLE_9} component={Example9} />
+          <Route path={ROUTES.EXAMPLE_10} component={Example10} />
         </Switch>
       </BrowserRouter>
     </div>
