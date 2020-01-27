@@ -7,6 +7,8 @@ import Example2 from "./components/Example2";
 import Example3 from "./components/Example3";
 import Example4 from "./components/Example4";
 import Example5 from "./components/Example5";
+import Example6 from "./components/Example6";
+import Example7 from "./components/Example7";
 import Prototype from "./components/Prototype";
 import * as ROUTES from "./constants/routes";
 import "./App.css";
@@ -41,6 +43,12 @@ function App(props) {
           <NavLink to={ROUTES.EXAMPLE_5} activeClassName="active">
             <h1>5</h1>
           </NavLink>
+          <NavLink to={ROUTES.EXAMPLE_6} activeClassName="active">
+            <h1>6</h1>
+          </NavLink>
+          <NavLink to={ROUTES.EXAMPLE_7} activeClassName="active">
+            <h1>7</h1>
+          </NavLink>
         </div>
         <Switch>
           <Route path="/muse" component={Muse} />
@@ -50,6 +58,8 @@ function App(props) {
           <Route path={ROUTES.EXAMPLE_3} component={Example3} />
           <Route path={ROUTES.EXAMPLE_4} component={Example4} />
           <Route path={ROUTES.EXAMPLE_5} component={Example5} />
+          <Route path={ROUTES.EXAMPLE_6} component={Example6} />
+          <Route path={ROUTES.EXAMPLE_7} component={Example7} />
         </Switch>
       </BrowserRouter>
     </div>
