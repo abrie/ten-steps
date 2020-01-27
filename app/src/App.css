@@ -1,0 +1,17 @@
+div.navbar {
+  display: flex;
+  flex-flow: row;
+}
+
+div.navbar a {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid black;
+  background: lightgrey;
+  text-decoration: none;
+}
+
+div.navbar a.active {
+  background: yellow;
+}

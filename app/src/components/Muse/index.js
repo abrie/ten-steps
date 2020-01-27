@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import LFSR from "../LFSR";
 import { ShufflePopper } from "../Shuffle";
-import Transport from "../Transport";
 import * as Tone from "tone";
 import seedrandom from "seedrandom";
 
@@ -67,17 +66,25 @@ export default function() {
       if (remaining <= 0) {
         remaining = durations.next().value;
         lfsr_b.shift();
-        const idx = lfsr_b.register % 4;
+        const idx = lfsr_b.register % 6;
         const action = actions_b[idx];
         if (action) action(time, remaining);
       } else {
-        remaining -= Tone.TimeBase("64n");
+        remaining -= Tone.TimeBase("256n");
       }
-    }, "64n");
+    }, "256n");
     synthLoop.start("0m").stop(SONG_LENGTH);
+
+    return () => {
+      synthLoop.dispose();
+      percussionLoop.dispose();
+      kick.dispose();
+      snare.dispose();
+      hat.dispose();
+    };
   }
 
   useEffect(() => run(), []);
 
-  return <Transport />;
+  return <p>***Muse***</p>;
 }
