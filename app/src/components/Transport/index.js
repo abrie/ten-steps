@@ -45,9 +45,9 @@ export default function(params) {
   };
 
   return (
-    <div>
-      <div className="positionIndicator">{position}</div>
-      <div>
+    <div className="transport">
+      <div className="display">{position}</div>
+      <div classname="controls">
         <button onClick={play} disabled={playing}>
           play
         </button>

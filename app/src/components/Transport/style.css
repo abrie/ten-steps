@@ -1,7 +1,25 @@
-.positionIndicator {
+div.transport {
+  display: flex;
+  flex-flow: row;
+  width: 9em;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
   font-family: monospace;
-  width: 10rem;
-  text-align: center;
-  border: 1px solid black;
-  background: lightgray;
+  font-size: 1em;
+  padding: 0.5em;
+  border: 1px solid #444;
+  background: white;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding-top: 1em;
 }

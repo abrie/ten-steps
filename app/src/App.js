@@ -28,54 +28,59 @@ function App(props) {
   }
 
   return (
-    <div className="App">
+    <main className="app">
+      <h1>Ten Steps to an Algorithmic Song</h1>
+      <hr />
       <BrowserRouter>
-        <div className="navbar">
+        <nav className="examplesNav">
           <NavLink to={ROUTES.EXAMPLE_1} activeClassName="active">
-            <h1>1</h1>
+            1
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_2} activeClassName="active">
-            <h1>2</h1>
+            2
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_3} activeClassName="active">
-            <h1>3</h1>
+            3
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_4} activeClassName="active">
-            <h1>4</h1>
+            4
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_5} activeClassName="active">
-            <h1>5</h1>
+            5
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_6} activeClassName="active">
-            <h1>6</h1>
+            6
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_7} activeClassName="active">
-            <h1>7</h1>
+            7
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_8} activeClassName="active">
-            <h1>8</h1>
+            8
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_9} activeClassName="active">
-            <h1>9</h1>
+            9
           </NavLink>
           <NavLink to={ROUTES.EXAMPLE_10} activeClassName="active">
-            <h1>10</h1>
+            10
           </NavLink>
-        </div>
-        <Switch>
-          <Route path={ROUTES.EXAMPLE_1} component={Example1} />
-          <Route path={ROUTES.EXAMPLE_2} component={Example2} />
-          <Route path={ROUTES.EXAMPLE_3} component={Example3} />
-          <Route path={ROUTES.EXAMPLE_4} component={Example4} />
-          <Route path={ROUTES.EXAMPLE_5} component={Example5} />
-          <Route path={ROUTES.EXAMPLE_6} component={Example6} />
-          <Route path={ROUTES.EXAMPLE_7} component={Example7} />
-          <Route path={ROUTES.EXAMPLE_8} component={Example8} />
-          <Route path={ROUTES.EXAMPLE_9} component={Example9} />
-          <Route path={ROUTES.EXAMPLE_10} component={Example10} />
-        </Switch>
+        </nav>
+        <hr />
+        <section className="activeExample">
+          <Switch>
+            <Route path={ROUTES.EXAMPLE_1} component={Example1} />
+            <Route path={ROUTES.EXAMPLE_2} component={Example2} />
+            <Route path={ROUTES.EXAMPLE_3} component={Example3} />
+            <Route path={ROUTES.EXAMPLE_4} component={Example4} />
+            <Route path={ROUTES.EXAMPLE_5} component={Example5} />
+            <Route path={ROUTES.EXAMPLE_6} component={Example6} />
+            <Route path={ROUTES.EXAMPLE_7} component={Example7} />
+            <Route path={ROUTES.EXAMPLE_8} component={Example8} />
+            <Route path={ROUTES.EXAMPLE_9} component={Example9} />
+            <Route path={ROUTES.EXAMPLE_10} component={Example10} />
+          </Switch>
+        </section>
       </BrowserRouter>
-    </div>
+    </main>
   );
 }
 

@@ -1,17 +1,52 @@
-div.navbar {
+body {
+  background: black;
+  padding: 1em;
+}
+
+main.app {
+  background: white;
+  padding: 1em;
+  border: 1em solid white;
+  border-radius: 1em;
+}
+
+main.app h1 {
+  text-align: center;
+}
+
+nav.examplesNav {
   display: flex;
+  width: 100%;
   flex-flow: row;
 }
 
-div.navbar a {
+nav.examplesNav a {
   display: block;
-  margin: 1em;
+  flex: 1 1 auto;
+  margin: 0.5em;
   padding: 1em;
   border: 1px solid black;
   background: lightgrey;
   text-decoration: none;
+  text-align: center;
 }
 
-div.navbar a.active {
+@media screen and (max-width: 768px) {
+  main.app h1 {
+    font-size: 1.5em;
+  }
+
+  nav.examplesNav a {
+    padding: 0.25em;
+  }
+}
+
+nav.examplesNav a.active {
   background: yellow;
+}
+
+section.activeExample {
+  margin: 1em;
+  display: flex;
+  align-items: center;
 }
