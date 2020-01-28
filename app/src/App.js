@@ -29,6 +29,9 @@ function App(props) {
 
   return (
     <main className="app">
+      <div className="source">
+        <a href="https://github.com/abrie/ten-steps">source code</a>
+      </div>
       <h1>Ten Steps to an Algorithmic Song</h1>
       <hr />
       <HashRouter basename="/">
