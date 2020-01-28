@@ -7,7 +7,7 @@ export function DefaultSynth() {
 export function PulseSynth() {
   const synth = new Tone.Synth({
     oscillator: {
-      type: "square"
+      type: "square4"
     }
   }).toMaster();
   synth.volume.value = -10;
