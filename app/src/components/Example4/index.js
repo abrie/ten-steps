@@ -32,7 +32,7 @@ export default function() {
 
   return (
     <div>
-      <p>Same Four Notes, different oscillator.</p>
+      <p>Do re mi fa... randomly, using a new synth.</p>
       <Transport length={length} />
     </div>
   );
