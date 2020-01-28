@@ -21,7 +21,10 @@ export default function(params) {
       "128n",
       "0m"
     );
-    return () => Tone.Transport.clear(id);
+    return () => {
+      Tone.Transport.clear(id);
+      stop();
+    };
   }, []);
 
   const play = () => {
