@@ -1,23 +1,10 @@
 import React, { useEffect } from "react";
 import Transport from "../Transport";
 import Tone from "../Tone";
+import { DefaultSynth, PulseSynth } from "../Synths";
 
 export default function() {
   const length = "1m";
-
-  function DefaultSynth() {
-    return new Tone.Synth().toMaster();
-  }
-
-  function PulseSynth() {
-    const synth = new Tone.Synth({
-      oscillator: {
-        type: "square"
-      }
-    }).toMaster();
-    synth.volume.value = -10;
-    return synth;
-  }
 
   function run() {
     const synths = [new DefaultSynth(), new PulseSynth()];

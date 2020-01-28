@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import Transport from "../Transport";
 import Tone from "../Tone";
+import { DefaultSynth } from "../Synths";
 
 export default function() {
   const length = "1m";
-
-  function DefaultSynth() {
-    return new Tone.Synth().toMaster();
-  }
 
   function run() {
     const synth = new DefaultSynth();
