@@ -25,7 +25,7 @@ export default function() {
 
   return (
     <div>
-      <p>Beep beep beep beep</p>
+      <p>Beep beep beep beep...</p>
       <Transport length={length} />
     </div>
   );
