@@ -1,7 +1,8 @@
 div.transport {
   display: flex;
   flex-flow: row;
-  width: 9em;
+  max-width: 7em;
+  min-width: 7em;
 }
 
 .display {
@@ -19,7 +20,13 @@ div.transport {
 .controls {
   width: 100%;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   align-items: center;
-  padding-top: 1em;
+}
+
+button.play {
+  display: none;
+}
+
+button.loop {
 }
