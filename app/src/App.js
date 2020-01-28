@@ -15,7 +15,9 @@ import * as ROUTES from "./constants/routes";
 import "./App.css";
 
 function App(props) {
-  const [authorized, setAuthorized] = useState(false);
+  const [authorized, setAuthorized] = useState(
+    Tone.context.state === "suspended"
+  );
 
   const initialize = () => {
     Tone.start().then(() => setAuthorized(true));
