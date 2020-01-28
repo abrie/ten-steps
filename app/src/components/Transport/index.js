@@ -47,15 +47,15 @@ export default function(params) {
   return (
     <div className="transport">
       <div className="display">{position}</div>
-      <div classname="controls">
-        <button onClick={play} disabled={playing}>
+      <div className="controls">
+        <button className="play" onClick={play} disabled={playing}>
+          play
+        </button>
+        <button className="loop" onClick={handleLoop} disabled={playing}>
           play
         </button>
         <button onClick={stop} disabled={!playing}>
           stop
-        </button>
-        <button onClick={handleLoop} disabled={playing}>
-          loop
         </button>
       </div>
     </div>
