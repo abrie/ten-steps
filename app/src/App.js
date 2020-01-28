@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
 import Tone from "./components/Tone";
-import Muse from "./components/Muse";
 import Example1 from "./components/Example1";
 import Example2 from "./components/Example2";
 import Example3 from "./components/Example3";
@@ -12,7 +11,6 @@ import Example7 from "./components/Example7";
 import Example8 from "./components/Example8";
 import Example9 from "./components/Example9";
 import Example10 from "./components/Example10";
-import Prototype from "./components/Prototype";
 import * as ROUTES from "./constants/routes";
 import "./App.css";
 
@@ -63,8 +61,6 @@ function App(props) {
           </NavLink>
         </div>
         <Switch>
-          <Route path="/muse" component={Muse} />
-          <Route path="/prototype" component={Prototype} />
           <Route path={ROUTES.EXAMPLE_1} component={Example1} />
           <Route path={ROUTES.EXAMPLE_2} component={Example2} />
           <Route path={ROUTES.EXAMPLE_3} component={Example3} />
