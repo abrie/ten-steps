@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ten-steps/static/css/main.ea1f89c9.chunk.css",
+    "main.js": "/ten-steps/static/js/main.3c20cd15.chunk.js",
+    "main.js.map": "/ten-steps/static/js/main.3c20cd15.chunk.js.map",
+    "runtime-main.js": "/ten-steps/static/js/runtime-main.5b3583e7.js",
+    "runtime-main.js.map": "/ten-steps/static/js/runtime-main.5b3583e7.js.map",
+    "static/js/2.79bf1589.chunk.js": "/ten-steps/static/js/2.79bf1589.chunk.js",
+    "static/js/2.79bf1589.chunk.js.map": "/ten-steps/static/js/2.79bf1589.chunk.js.map",
+    "index.html": "/ten-steps/index.html",
+    "precache-manifest.686e836e787eb402de60117c9b5bb5a4.js": "/ten-steps/precache-manifest.686e836e787eb402de60117c9b5bb5a4.js",
+    "service-worker.js": "/ten-steps/service-worker.js",
+    "static/css/main.ea1f89c9.chunk.css.map": "/ten-steps/static/css/main.ea1f89c9.chunk.css.map",
+    "static/js/2.79bf1589.chunk.js.LICENSE": "/ten-steps/static/js/2.79bf1589.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b3583e7.js",
+    "static/js/2.79bf1589.chunk.js",
+    "static/css/main.ea1f89c9.chunk.css",
+    "static/js/main.3c20cd15.chunk.js"
+  ]
+}
