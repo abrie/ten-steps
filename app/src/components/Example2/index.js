@@ -10,9 +10,10 @@ export default function() {
     const synth = new DefaultSynth();
 
     const notes = ["C4", "D4", "E4", "F4"];
+    const nextNote = () => notes[notes.push(notes.shift()) - 1];
 
     const synthLoop = new Tone.Loop(time => {
-      synth.triggerAttackRelease(notes.shift(), "4n", time);
+      synth.triggerAttackRelease(nextNote(), "4n", time);
     }, "4n");
 
     synthLoop.start("0m").stop("1m");
@@ -27,7 +28,7 @@ export default function() {
 
   return (
     <div>
-      <p>Do re me fa</p>
+      <p>Do re me fa...</p>
       <Transport length={length} />
     </div>
   );
