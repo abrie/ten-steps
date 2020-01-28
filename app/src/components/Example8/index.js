@@ -49,7 +49,10 @@ export default function() {
 
   return (
     <div>
-      <p>Eight Notes, Three Synths, Basic Theory, Rests, and an LFSR.</p>
+      <p>
+        An LFSR <strong>sometimes</strong> selects one of eight major chord
+        notes and one of three synths...
+      </p>
       <Transport length={length} />
     </div>
   );

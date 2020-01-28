@@ -86,7 +86,8 @@ export default function() {
   return (
     <div>
       <p>
-        Eight Notes, Three Synths, Basic Theory, Rests, Percussion, and LFSRs.
+        An LFSR <strong>sometimes</strong> selects one of eight major chord
+        notes, one of three synths, and one of three percussion sounds...
       </p>
       <Transport length={length} />
     </div>

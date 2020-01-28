@@ -45,7 +45,13 @@ export default function() {
 
   return (
     <div>
-      <p>Four Notes, Three Synths, and an LFSR.</p>
+      <p>
+        An LFSR selects one of four notes and one of three synths&nbsp;
+        <span aria-label="musical notes" role="img">
+          &#127926;
+        </span>
+        ...
+      </p>
       <Transport length={length} />
     </div>
   );
