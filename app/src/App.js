@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
+import { HashRouter, Switch, Route, NavLink } from "react-router-dom";
 import Tone from "./components/Tone";
 import Example1 from "./components/Example1";
 import Example2 from "./components/Example2";
@@ -31,7 +31,7 @@ function App(props) {
     <main className="app">
       <h1>Ten Steps to an Algorithmic Song</h1>
       <hr />
-      <BrowserRouter>
+      <HashRouter basename="/">
         <nav className="examplesNav">
           <NavLink to={ROUTES.EXAMPLE_1} activeClassName="active">
             1
@@ -79,7 +79,7 @@ function App(props) {
             <Route path={ROUTES.EXAMPLE_10} component={Example10} />
           </Switch>
         </section>
-      </BrowserRouter>
+      </HashRouter>
     </main>
   );
 }
