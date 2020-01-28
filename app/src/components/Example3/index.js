@@ -32,7 +32,7 @@ export default function() {
 
   return (
     <div>
-      <p>Do re me fa... randomly.</p>
+      <p>Do re mi fa... randomly.</p>
       <Transport length={length} />
     </div>
   );
