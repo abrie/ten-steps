@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fce8b2b91f5328b98f66c92c5ba8964f",
+    "revision": "5f6357940b1dfcd5b5a74f1532e364f7",
     "url": "/ten-steps/index.html"
   },
   {
-    "revision": "658953a130f9fd159c81",
+    "revision": "7a02c9408c0ddd4d5a8b",
     "url": "/ten-steps/static/css/main.dc330169.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ten-steps/static/js/2.d56238b1.chunk.js.LICENSE"
   },
   {
-    "revision": "658953a130f9fd159c81",
-    "url": "/ten-steps/static/js/main.8ea4180e.chunk.js"
+    "revision": "7a02c9408c0ddd4d5a8b",
+    "url": "/ten-steps/static/js/main.d1f06a3c.chunk.js"
   },
   {
     "revision": "422cf0264845529b4568",
