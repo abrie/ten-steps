@@ -50,8 +50,8 @@ export default function() {
   return (
     <div>
       <p>
-        Six notes of I and IV... deterministically, using three different
-        synths.
+        <strong>Six notes of I and IV</strong>... deterministically, using three
+        different synths.
       </p>
       <Transport length={length} />
     </div>

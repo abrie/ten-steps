@@ -28,7 +28,9 @@ export default function() {
 
   return (
     <div>
-      <p>Do re mi fa...</p>
+      <p>
+        <strong>Do re mi fa</strong>...
+      </p>
       <Transport length={length} />
     </div>
   );

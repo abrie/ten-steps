@@ -32,7 +32,9 @@ export default function() {
 
   return (
     <div>
-      <p>Do re mi fa... randomly, using two different synths.</p>
+      <p>
+        Do re mi fa... randomly, using <strong>two</strong> different synths.
+      </p>
       <Transport length={length} />
     </div>
   );

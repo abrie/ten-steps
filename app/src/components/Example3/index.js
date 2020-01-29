@@ -32,7 +32,9 @@ export default function() {
 
   return (
     <div>
-      <p>Do re mi fa... randomly.</p>
+      <p>
+        Do re mi fa... <strong>randomly.</strong>
+      </p>
       <Transport length={length} />
     </div>
   );
