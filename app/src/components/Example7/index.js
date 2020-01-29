@@ -50,8 +50,8 @@ export default function() {
   return (
     <div>
       <p>
-        An LFSR selects one of eight major chord notes and one of three
-        synths...
+        Six notes of I and IV... deterministically, using three different
+        synths.
       </p>
       <Transport length={length} />
     </div>

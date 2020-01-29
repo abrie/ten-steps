@@ -86,9 +86,9 @@ export default function() {
   return (
     <div>
       <p>
-        An LFSR <strong>sometimes</strong> selects one of eight major chord
-        notes, one of three synths, and one of three percussion sounds; but
-        selects percussion sounds twice as frequently...
+        Six notes of I and IV with rests... deterministically, using three
+        different synths and three percussion sounds, with percussion played
+        twice as frequently.
       </p>
       <Transport length={length} />
     </div>

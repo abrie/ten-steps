@@ -46,7 +46,7 @@ export default function() {
   return (
     <div>
       <p>
-        An LFSR selects one of four notes and one of three synths&nbsp;
+        Do re mi fa... deterministically, using three different synths.
         <span aria-label="musical notes" role="img">
           &#127926;
         </span>
