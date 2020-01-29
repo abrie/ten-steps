@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HashRouter, Switch, Route, NavLink } from "react-router-dom";
 import Tone from "./components/Tone";
+import Landing from "./components/Landing";
 import Example1 from "./components/Example1";
 import Example2 from "./components/Example2";
 import Example3 from "./components/Example3";
@@ -70,6 +71,7 @@ function App(props) {
         <hr />
         <section className="activeExample">
           <Switch>
+            <Route exact path={ROUTES.LANDING} component={Landing} />
             <Route path={ROUTES.EXAMPLE_1} component={Example1} />
             <Route path={ROUTES.EXAMPLE_2} component={Example2} />
             <Route path={ROUTES.EXAMPLE_3} component={Example3} />

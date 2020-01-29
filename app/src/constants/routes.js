@@ -1,3 +1,4 @@
+export const LANDING = "/";
 export const EXAMPLE_1 = "/example-1";
 export const EXAMPLE_2 = "/example-2";
 export const EXAMPLE_3 = "/example-3";
