@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6f59e5387d0a2105f71cda975a74f1b1",
+    "revision": "13d3c1316169e612ab3c958a7f45d820",
     "url": "/ten-steps/index.html"
   },
   {
-    "revision": "32f549e9817a91e4fe97",
+    "revision": "d62cccd2271c8d4b814e",
     "url": "/ten-steps/static/css/main.dc330169.chunk.css"
   },
   {
-    "revision": "0410d69ab87f410e6101",
-    "url": "/ten-steps/static/js/2.d56238b1.chunk.js"
+    "revision": "abc50493735b84c6d1cd",
+    "url": "/ten-steps/static/js/2.b83a5911.chunk.js"
   },
   {
     "revision": "0a81952dc10a472cd35dc41bef0aa2b7",
-    "url": "/ten-steps/static/js/2.d56238b1.chunk.js.LICENSE"
+    "url": "/ten-steps/static/js/2.b83a5911.chunk.js.LICENSE"
   },
   {
-    "revision": "32f549e9817a91e4fe97",
-    "url": "/ten-steps/static/js/main.dd0779e9.chunk.js"
+    "revision": "d62cccd2271c8d4b814e",
+    "url": "/ten-steps/static/js/main.5855bc6a.chunk.js"
   },
   {
     "revision": "422cf0264845529b4568",
