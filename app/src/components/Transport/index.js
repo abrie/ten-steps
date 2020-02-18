@@ -3,15 +3,14 @@ import * as Tone from "tone";
 import "./style.css";
 
 export default function(params) {
-  const [looping, setLooping] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [position, setPosition] = useState(Tone.Transport.position);
 
   useEffect(() => {
     Tone.Transport.position = 0;
     Tone.Transport.setLoopPoints(0, params.length);
-    Tone.Transport.loop = looping;
-  }, [params.length, looping]);
+    Tone.Transport.loop = true;
+  }, [params.length]);
 
   useEffect(() => {
     const id = Tone.Transport.scheduleRepeat(
@@ -23,23 +22,16 @@ export default function(params) {
     );
     return () => {
       Tone.Transport.clear(id);
-      stop();
+      Tone.Transport.stop();
     };
   }, []);
-
-  const play = () => {
-    Tone.Transport.start();
-    setPlaying(true);
-  };
 
   const stop = () => {
     Tone.Transport.stop();
     setPlaying(false);
-    setLooping(false);
   };
 
   const handleLoop = () => {
-    setLooping(true);
     setPlaying(true);
     Tone.Transport.start();
   };
@@ -48,9 +40,6 @@ export default function(params) {
     <div className="transport">
       <div className="display">{position}</div>
       <div className="controls">
-        <button className="play" onClick={play} disabled={playing}>
-          play
-        </button>
         <button className="loop" onClick={handleLoop} disabled={playing}>
           play
         </button>
