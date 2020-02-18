@@ -53,7 +53,7 @@ export default function() {
         <strong>Six notes of I and IV</strong>... deterministically, using three
         different synths.
       </p>
-      <Transport length={length} />
+      <Transport length={length} label="7" />
     </div>
   );
 }

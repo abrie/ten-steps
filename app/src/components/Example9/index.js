@@ -89,7 +89,7 @@ export default function() {
         Six notes of I and IV with rests... deterministically, using three
         different synths and <strong>three percussion sounds</strong>.
       </p>
-      <Transport length={length} />
+      <Transport length={length} label="9" />
     </div>
   );
 }
