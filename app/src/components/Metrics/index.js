@@ -18,7 +18,7 @@ async function postData(url = "", data = {}) {
 }
 
 window.addEventListener("beforeunload", () => {
-  reportMetric({ type: "appUnload" });
+  reportMetric({ action: "departed" });
 });
 
 function reportMetric(data) {

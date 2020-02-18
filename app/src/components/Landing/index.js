@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import reportMetric from "../Metrics";
 
 export default function() {
+  useEffect(() => {
+    reportMetric({ action: "arrived" });
+  }, []);
+
   return (
     <p>
       This app demonstrates proceedural music generation. A song invented on the
