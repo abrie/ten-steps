@@ -47,9 +47,9 @@ export default function() {
     <div>
       <p>
         Do re mi fa... <strong>deterministically</strong>, using{" "}
-        <strong>three</strong> different synths.
+        <strong>three</strong> different synths
         <span aria-label="musical notes" role="img">
-          &#127926;
+          &nbsp;&#127926;
         </span>
         ...
       </p>
