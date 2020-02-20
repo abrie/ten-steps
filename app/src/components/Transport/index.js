@@ -5,7 +5,7 @@ import reportMetric from "../Metrics";
 
 export default function(params) {
   const [playing, setPlaying] = useState(false);
-  const [position, setPosition] = useState(Tone.Transport.position);
+  const [position, setPosition] = useState("0:0:0");
 
   useEffect(() => {
     reportMetric({ example: params.label, action: "load" });
@@ -17,11 +17,19 @@ export default function(params) {
     Tone.Transport.loop = true;
   }, [params.length]);
 
-  const play = () => {
-    reportMetric({ example: params.label, action: "play" });
-    Tone.Transport.start();
-    setPlaying(true);
-  };
+  useEffect(() => {
+    const id = Tone.Transport.scheduleRepeat(
+      () => {
+        setPosition(Tone.Transport.position.split(".")[0]);
+      },
+      "128n",
+      "0m"
+    );
+    return () => {
+      Tone.Transport.clear(id);
+      Tone.Transport.stop();
+    };
+  }, []);
 
   const stop = () => {
     reportMetric({ example: params.label, action: "stop" });
@@ -54,9 +62,6 @@ export default function(params) {
     <div className="transport">
       <div className="display">{position}</div>
       <div className="controls">
-        <button className="play" onClick={play} disabled={playing}>
-          play
-        </button>
         <button className="loop" onClick={handleLoop} disabled={playing}>
           play
         </button>
