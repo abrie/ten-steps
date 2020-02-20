@@ -1,3 +1,5 @@
+// https://github.com/Tonejs/Midi/blob/55ab27e95a8b98704d5cc8ab3611669fc61c9d91/src/Note.ts#L33
+//
 const PitchToMidi = note => {
   const regexp = /^([a-g]{1}(?:b|#|x|bb)?)(-?[0-9]+)/i;
   const noteToScaleIndex = {
