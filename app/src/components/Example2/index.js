@@ -31,7 +31,7 @@ export default function() {
       <p>
         <strong>Do re mi fa</strong>...
       </p>
-      <Transport length={length} />
+      <Transport length={length} label="2" />
     </div>
   );
 }

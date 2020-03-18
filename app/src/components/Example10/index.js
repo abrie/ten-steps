@@ -90,7 +90,7 @@ export default function() {
         different synths and three percussion sounds, with{" "}
         <strong>percussion played twice as frequently</strong>.
       </p>
-      <Transport length={length} />
+      <Transport length={length} label="10" />
     </div>
   );
 }

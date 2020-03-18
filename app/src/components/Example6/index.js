@@ -53,7 +53,7 @@ export default function() {
         </span>
         ...
       </p>
-      <Transport length={length} />
+      <Transport length={length} label="6" />
     </div>
   );
 }

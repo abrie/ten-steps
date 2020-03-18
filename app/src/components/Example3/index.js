@@ -35,7 +35,7 @@ export default function() {
       <p>
         Do re mi fa... <strong>randomly.</strong>
       </p>
-      <Transport length={length} />
+      <Transport length={length} label="3" />
     </div>
   );
 }

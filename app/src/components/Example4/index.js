@@ -35,7 +35,7 @@ export default function() {
       <p>
         Do re mi fa... randomly, using a <strong>different synth</strong>.
       </p>
-      <Transport length={length} />
+      <Transport length={length} label="4" />
     </div>
   );
 }
